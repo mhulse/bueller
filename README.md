@@ -52,7 +52,7 @@ Edits to `/Applications/XAMPP/xamppfiles/etc/extra/httpd-vhosts.conf`:
          Allow from all
      </Directory>
  </VirtualHost>
-```
+ ```
 
 #### HOSTS
 
@@ -118,15 +118,17 @@ The above will create a `~/webapps/blog/` directory; navigate to this directory 
 
 1. Delete all files.
 1. Clone the `bueller` repo:
-```bash
-$ git clone --recursive git@github.com:mhulse/bueller.git ./blog
-```
+
+ ```bash
+ $ git clone --recursive git@github.com:mhulse/bueller.git ./blog
+ ```
 1. Create a `wp-config.php` with all the proper settings.
 1. Install your custom theme:
-```bash
-$ cd ~/webapps/content/themes/
-$ git clone git@github.com:USERNAME/theme-name.git
-```
+
+ ```bash
+ $ cd ~/webapps/content/themes/
+ $ git clone git@github.com:USERNAME/theme-name.git
+ ```
 
 #### INSTALL
 
