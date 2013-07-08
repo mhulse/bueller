@@ -44,3 +44,5 @@ Thumbs.db
 /wp-config.php
 /content/upgrade/
 /content/uploads/
+/content/*/*
+!/content/*/*.php
