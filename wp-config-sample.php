@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * Bueller? ... Bueller? ... Bueller?
+ *
+ * @see https://github.com/mhulse/bueller
+ * @version 1.0.0
+ */
+
 //--------------------------------------------------------------------------
 //
 // Local database connectivity:
