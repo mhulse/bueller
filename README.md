@@ -179,12 +179,14 @@ Visit [`http://foo.com/wp-admin/install.php`](http://dev.local/wp-admin/install.
 
 	```bash
 	$ git fetch --tags
+	$ git tag -n
 	$ git checkout x.x.x
 	$ cd ..
 	$ git commit -a -m "Update Wordpress to version x.x.x"
+	$ git push
 	```
 
-	… where `x.x.x` is the version of WordPress you want to upgrade to.
+	… where `x.x.x` is the [version of WordPress](https://github.com/WordPress/WordPress/releases) you want to upgrade to.
 
 1. If you've forked the repo and cloned it using SSH, then you'll probably need to [setup a ssh key](https://help.github.com/articles/generating-ssh-keys#platform-linux) on WebFaction.
 
