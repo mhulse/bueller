@@ -86,7 +86,7 @@ I use [Hosts for Mac](https://www.macupdate.com/app/mac/40003/hosts) to "allow f
 Open terminal, navigate to your home directory (or, wherever you want to clone this repo) and run:
 
 ```bash
-$ git clone --recursive git@github.com:mhulse/bueller.git development
+$ git clone --recursive https://github.com/mhulse/bueller.git development
 ```
 
 The above command clones this repo, and its submodules, into a root directory named `development`.
@@ -151,8 +151,7 @@ The above will create a `~/webapps/blog/` directory; navigate to this directory 
 	$ git clone --recursive https://github.com/mhulse/bueller.git ./blog
 	```
 
-	… or, if you've forked this repo and you want the ability to push/pull:
-
+	... or, if you've forked this repo and you want the ability to push/pull:
 
 	```bash
 	$ git clone --recursive git@github.com:USERNAME/bueller.git ./blog
@@ -178,11 +177,19 @@ Visit [`http://foo.com/wp-admin/install.php`](http://dev.local/wp-admin/install.
 1. Update WordPress using the terminal; `cd` to `wp` folder and run:
 
 	```bash
+	# View local tag:
+	$ git describe --tags
+	# Get tags from remote:
 	$ git fetch --tags
+	# View them:
 	$ git tag -n
+	# If local isn't latest, get the latest:
 	$ git checkout x.x.x
+	# Go back to parent directory:
 	$ cd ..
+	# Commit new version:
 	$ git commit -a -m "Update Wordpress to version x.x.x"
+	# Push commits:
 	$ git push
 	```
 
@@ -224,6 +231,11 @@ Visit [`http://foo.com/wp-admin/install.php`](http://dev.local/wp-admin/install.
 
 ## Changelog
 
+* v1.0.1
+	* 2013/11/17
+		* Reorganized `wp-config-sample.php`.
+		* New debug settings ([#8](https://github.com/mhulse/bueller/issues/8))
+		* Minor tweaks to `README.md`.
 * v1.0.0
 	* 2013/07/10
 		* Added version number to `wp-config-sample.php`.
